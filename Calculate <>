@@ -1,15 +1,15 @@
 function calculate(i) {
-    return function(i1) {
-      return function(i2) {
-        if( i === '+' ) {
-            return( i1 + i2 );
-        } else if( i === '*' ) {
-            return( i1 * i2 );
-        } 
-        return (alert('no operator'))
+  return function (i1) {
+    return function (i2) {
+      if (i === '+') {
+        return (i1 + i2);
       }
+      else if (i === '*') {
+        return (i1 * i2);
+      }
+      return (alert('no operator'))
     }
   }
-
-  console.log(calculate('')(21)(12));
-  console.log(calculate('*')(32)(56));
+}
+console.log(calculate('')(21)(12));
+console.log(calculate('*')(32)(56));
